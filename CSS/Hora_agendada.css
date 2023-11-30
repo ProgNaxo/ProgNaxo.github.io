@@ -1,0 +1,275 @@
+/* ------------------------------------------------------------------------------------------------------- */
+/*                                  HEADER                                                                 */
+/* --------------------------------------------------------------------------------------------------------*/
+/* //TODO: Titulo1 */
+.titulo1{
+    margin-top: 42px;
+    margin-left: 180px;
+}
+
+.titulo1 img {
+    width: 200px;
+}
+
+
+/* //TODO: Menú desplegable */
+.menu{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 10%;
+    height: 9%;
+    position: fixed;
+    transition: .4s all;
+    z-index: 1;
+    top: 2.5%;
+    left: 1%;
+}
+.menu ul{
+    padding: 0px;
+    text-align: center;
+    list-style: none;
+}
+.menu li{
+    transition: .3s all;
+}
+.menu a{
+    text-decoration: none;
+    list-style: none;
+    
+    transition: .3s all;
+    font-size: 0px;
+    padding: 0px;
+}
+.menu h2{
+    text-align: center;
+    color: aliceblue;
+    padding: 7px;
+    padding-bottom: 7px;
+    font-size: 0px;
+}
+.menu img{
+    padding-top: 30px;
+    padding-left: 10px;
+}
+.menu:hover{
+    width: 15%;
+    height: 30%;
+
+    background-color:slateblue;
+}
+.menu:hover h2{
+    padding: 15px;
+    font-size: 35px;
+}
+.menu:hover a{
+    font-size: 20px;
+    color: aliceblue;
+    display: block;
+    padding: 20px;
+}
+.menu:hover img{
+    height: 0px;
+}
+.menu:hover li{
+    border-top: 1px solid black;
+}
+.menu:hover ul:last-of-type{
+    border-bottom: 1px solid black;
+}
+.menu:hover a:hover{
+    font-size: 25px;
+    padding: 30px 0px;
+    background-color:deepskyblue;
+}
+
+
+/* //TODO: Header que no desaparece */
+.men {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+
+main {
+    margin-top: 200px;
+}
+
+/* //TODO: Enlaces */
+header nav {
+    margin-bottom: 10px;
+}
+    header nav ul {
+        list-style: none;
+        overflow: hidden;
+    }
+        header nav ul li {
+            float: left;
+        }
+            header nav ul li a {
+                display: block;
+                padding-left: 50px;
+                padding-right: 50px;
+                text-decoration: none;
+                color: rgba(6, 32, 82);
+            }
+.enlaces{
+    display: flex;
+    justify-content: center;
+}
+.link:hover{
+    transform: scale(1.3);
+    transition: transform .5s;
+}
+
+
+/* //TODO: ICONO DE LOGIN DEL USUARIO */
+.usuario{
+    position: fixed;
+    right: 30px;
+}
+#user {
+    color: gray;
+}
+
+/* //TODO: SUBIR TALLER*/
+.taller{
+    position: fixed;
+    right: 30px;
+    top: 180px;
+}
+
+#p_t{
+    color: gray;
+}
+
+/* //TODO: BARRA DE BUSQUEDA */
+.search {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 60px;
+    transition: 0.5s;
+    box-shadow: 0 0 0 .5px gray;
+    overflow: hidden;
+    position: fixed;
+    right: 70px;
+    top: 108px;
+}
+.search.active {
+    width: 360px;
+}
+.search .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+.search .input {
+    position: relative;
+    width: 300px;
+    height: 60px;
+    left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search .input input {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 10px 0;
+}
+.clear {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    right: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clear::before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 15px;
+    background: #999;
+    transform: rotate(45deg);
+}
+.clear::after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 15px;
+    background: #999;
+    transform: rotate(315deg);
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+/*                                  HORA AGENDADA                                                          */
+/* --------------------------------------------------------------------------------------------------------*/
+
+
+.check{
+    color:rgb(74, 221, 74);
+    margin-top: 90px;
+    margin-left: 100px;
+}
+
+.confirmacion{
+    color: white;
+    position: absolute;
+    left: 25%;
+    top: 44%;
+}
+
+.mensaje_confirmacion{
+    position: absolute;
+    top: 40%;
+    left: 23%;
+    background-color: rgb(59, 59, 212);
+    width: 850px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.btn_volver{
+    background-color: cornflowerblue;
+    position: absolute;
+    left: 47%;
+    top: 70%;
+    border-radius: 20px;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.texto_volver{
+    color:rgb(85, 84, 94);
+    text-decoration: none;
+    position: absolute;
+    left: 21%;
+    top: 16%;
+}
+
+.btn_volver:hover{
+    transform: scale(1.1);
+    transition: transform 1s;
+}

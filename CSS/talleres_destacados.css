@@ -1,0 +1,486 @@
+/* ------------------------------------------------------------------------------------------------------- */
+/*                                  HEADER                                                                 */
+/* --------------------------------------------------------------------------------------------------------*/
+/* //TODO: Titulo1 */
+.titulo1{
+    margin-top: 42px;
+    margin-left: 180px;
+}
+
+.titulo1 img {
+    width: 200px;
+}
+
+
+/* //TODO: Menú desplegable */
+.menu{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 10%;
+    height: 9%;
+    position: fixed;
+    transition: .4s all;
+    z-index: 1;
+    top: 2.5%;
+    left: 1%;
+}
+.menu ul{
+    padding: 0px;
+    text-align: center;
+    list-style: none;
+}
+.menu li{
+    transition: .3s all;
+}
+.menu a{
+    text-decoration: none;
+    list-style: none;
+    
+    transition: .3s all;
+    font-size: 0px;
+    padding: 0px;
+}
+.menu h2{
+    text-align: center;
+    color: aliceblue;
+    padding: 7px;
+    padding-bottom: 7px;
+    font-size: 0px;
+}
+.menu img{
+    padding-top: 30px;
+    padding-left: 10px;
+}
+.menu:hover{
+    width: 15%;
+    height: 30%;
+
+    background-color:slateblue;
+}
+.menu:hover h2{
+    padding: 15px;
+    font-size: 35px;
+}
+.menu:hover a{
+    font-size: 20px;
+    color: aliceblue;
+    display: block;
+    padding: 20px;
+}
+.menu:hover img{
+    height: 0px;
+}
+.menu:hover li{
+    border-top: 1px solid black;
+}
+.menu:hover ul:last-of-type{
+    border-bottom: 1px solid black;
+}
+.menu:hover a:hover{
+    font-size: 25px;
+    padding: 30px 0px;
+    background-color:deepskyblue;
+}
+
+
+/* //TODO: Header que no desaparece */
+.men {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+
+main {
+    margin-top: 200px;
+}
+
+/* //TODO: Enlaces */
+header nav {
+    margin-bottom: 10px;
+}
+    header nav ul {
+        list-style: none;
+        overflow: hidden;
+    }
+        header nav ul li {
+            float: left;
+        }
+            header nav ul li a {
+                display: block;
+                padding-left: 50px;
+                padding-right: 50px;
+                text-decoration: none;
+                color: rgba(6, 32, 82);
+            }
+.enlaces{
+    display: flex;
+    justify-content: center;
+}
+.link:hover{
+    transform: scale(1.3);
+    transition: transform .5s;
+}
+
+
+/* //TODO: ICONO DE LOGIN DEL USUARIO */
+.usuario{
+    position: fixed;
+    right: 30px;
+}
+#user {
+    color: gray;
+}
+
+/* //TODO: SUBIR TALLER*/
+.taller{
+    position: fixed;
+    right: 30px;
+    top: 180px;
+}
+
+#p_t{
+    color: gray;
+}
+
+/* //TODO: BARRA DE BUSQUEDA */
+.search {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 60px;
+    transition: 0.5s;
+    box-shadow: 0 0 0 .5px gray;
+    overflow: hidden;
+    position: fixed;
+    right: 70px;
+    top: 108px;
+}
+.search.active {
+    width: 360px;
+}
+.search .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+.search .input {
+    position: relative;
+    width: 300px;
+    height: 60px;
+    left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search .input input {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 10px 0;
+}
+.clear {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    right: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clear::before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 15px;
+    background: #999;
+    transform: rotate(45deg);
+}
+.clear::after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 15px;
+    background: #999;
+    transform: rotate(315deg);
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+/*                                  TALLERES                                                               */
+/* ------------------------------------------------------------------------------------------------------- */
+/* //TODO: TALLERES DESTACADOS (DENTRO) */
+.titulo_{
+    display: flex;
+    justify-content: right;
+    margin-top: 250px;
+    margin-right: 70px;
+    margin-bottom: 10px;
+}
+.estrellas{
+    display: flex;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+.estrella{
+    color:gold;
+}
+
+.img_mapa{
+    display: flex;
+    justify-content: space-around;
+}
+.map{
+    color: rgba(64, 64, 64);
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, .5);
+    width: 400px;
+    height: 300px;
+}
+.conteiner {
+    display: flex;
+}
+
+.puntuacion {
+    display: flex;
+}
+
+.valor{
+    font-size: 17px;
+    margin-right: 5px;
+}
+
+
+/* //TODO: Especialidad */
+
+.especialidad{
+    width: 190px;
+    height: 90px;
+    background: rgb(117, 215, 110);
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.titulo_especialidad{
+    text-align: center;
+    padding: 10px 0 10px 0;
+    font-size: 20px;
+    background-color:rgb(41, 197, 51);
+    color: rgb(240, 248, 255);
+    border-radius: 13px;
+}
+
+/*//TODO: Horario */
+
+.horario{
+    width: 190px;
+    height: 250px;
+    background: rgb(202, 227, 249);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.titulo_horario{
+    text-align: center;
+    padding: 10px 0 10px 0;
+    font-size: 16px;
+    background-color:rgb(71, 85, 176);
+    color: aliceblue;
+    border-radius: 13px;
+}
+
+/* //TODO: Agenda */
+
+.agenda{
+    margin-top: 60px;
+}
+
+
+.calendario{
+margin-left: 45px;
+}
+/*//TODO: SERVICIO SOS */
+
+.sos{
+    margin-top: 100px;
+    margin-right: 15px;
+    width: 130px;
+    height: 100px;
+    background: rgb(230, 82, 74);
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.tit_sos{
+    text-align: center;
+    padding: 10px 0 10px 0;
+    font-size: 16px;
+    background-color:rgb(231, 34, 34);
+    color: aliceblue;
+    border-radius: 13px;
+}
+
+
+/* //TODO: contiene toda la informacion en cuadros*/
+.conteiner_cosas {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+/* //TODO: contiene la reseñas, contactos y oferta*/
+.primeras3 {
+    display: flex;
+}
+
+
+/*//TODO: CONTACTOS */
+
+.contacto{
+    width: 198px;
+    height: 280px;
+    background: rgb(110, 189, 215);
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.titulo_contacto{
+    text-align: center;
+    padding: 10px 0 10px 0;
+    font-size: 20px;
+    background-color:rgb(41, 150, 197);
+    color: rgb(240, 248, 255);
+    border-radius: 13px;
+}
+
+/*//TODO: OFERTAS */
+.ofertas{
+    width: 198px;
+    height: 200px;
+    background: rgb(215, 218, 187);
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    margin-left: 100px;
+}
+
+.titulo_oferta{
+    text-align: center;
+    padding: 10px 0 10px 0;
+    font-size: 20px;
+    background-color:rgb(189, 166, 64);
+    color: rgb(252, 255, 240);
+    border-radius: 13px;
+}
+
+/*//TODO: RESEÑAS */
+.reseñas{
+    width: 198px;
+    height: 200px;
+    background: rgb(96, 171, 38);
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    margin-right: 100px;
+}
+
+.titulo_reseña{
+    text-align: center;
+    padding: 10px 0 10px 0;
+    font-size: 20px;
+    background-color:rgb(48, 135, 62);
+    color: rgb(252, 255, 240);
+    border-radius: 13px;
+}
+
+/*//TODO: FOOTER */ 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_red{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+.footer{
+    background-color:darkblue;
+    padding: 50px 0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 60px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbb;
+    display: block;
+    transform: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #fff;
+    padding-left: 8px;
+}
+
+.mensaje{
+    color: #fff;
+}

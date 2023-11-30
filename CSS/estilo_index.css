@@ -1,0 +1,743 @@
+/* //TODO: Deja el fondo blanco o si quieres por mientras ponle mientras trabajas */
+
+
+/* //TODO: Titulo1 */
+.titulo1{
+    margin-top: 42px;
+    margin-left: 180px;
+}
+
+.titulo1 img {
+    width: 200px;
+}
+
+
+/* //TODO: Menú desplegable */
+.menu{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 10%;
+    height: 9%;
+    position: fixed;
+    transition: .4s all;
+    z-index: 1;
+    top: 2.5%;
+    left: 1%;
+}
+.menu ul{
+    padding: 0px;
+    text-align: center;
+    list-style: none;
+}
+.menu li{
+    transition: .3s all;
+}
+.menu a{
+    text-decoration: none;
+    list-style: none;
+    
+    transition: .3s all;
+    font-size: 0px;
+    padding: 0px;
+}
+.menu h2{
+    text-align: center;
+    color: aliceblue;
+    padding: 7px;
+    padding-bottom: 7px;
+    font-size: 0px;
+}
+.menu img{
+    padding-top: 30px;
+    padding-left: 10px;
+}
+.menu:hover{
+    width: 15%;
+    height: 30%;
+
+    background-color:slateblue;
+}
+.menu:hover h2{
+    padding: 15px;
+    font-size: 35px;
+}
+.menu:hover a{
+    font-size: 20px;
+    color: aliceblue;
+    display: block;
+    padding: 20px;
+}
+.menu:hover img{
+    height: 0px;
+}
+.menu:hover li{
+    border-top: 1px solid black;
+}
+.menu:hover ul:last-of-type{
+    border-bottom: 1px solid black;
+}
+.menu:hover a:hover{
+    font-size: 25px;
+    padding: 30px 0px;
+    background-color:deepskyblue;
+}
+
+
+/* //TODO: Header que no desaparece */
+.men {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+
+main {
+    margin-top: 200px;
+}
+
+/* //TODO: Enlaces */
+header nav {
+    margin-bottom: 10px;
+}
+    header nav ul {
+        list-style: none;
+        overflow: hidden;
+    }
+        header nav ul li {
+            float: left;
+        }
+            header nav ul li a {
+                display: block;
+                padding-left: 50px;
+                padding-right: 50px;
+                text-decoration: none;
+                color: rgba(6, 32, 82);
+            }
+.enlaces{
+    display: flex;
+    justify-content: center;
+}
+.link:hover{
+    transform: scale(1.3);
+    transition: transform .5s;
+}
+
+
+/* //TODO: ICONO DE LOGIN DEL USUARIO */
+.usuario{
+    position: fixed;
+    right: 30px;
+}
+#user {
+    color: gray;
+}
+
+
+/* //TODO: SUBIR TALLER*/
+.taller{
+    position: fixed;
+    right: 30px;
+    top: 180px;
+}
+
+#p_t{
+    color: gray;
+}
+
+
+/* //TODO: BARRA DE BUSQUEDA */
+.search {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 60px;
+    transition: 0.5s;
+    box-shadow: 0 0 0 .5px gray;
+    overflow: hidden;
+    position: fixed;
+    right: 70px;
+    top: 108px;
+}
+.search.active {
+    width: 360px;
+}
+.search .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+.search .input {
+    position: relative;
+    width: 300px;
+    height: 60px;
+    left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search .input input {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 10px 0;
+}
+.clear {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    right: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clear::before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 15px;
+    background: #999;
+    transform: rotate(45deg);
+}
+.clear::after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 15px;
+    background: #999;
+    transform: rotate(315deg);
+}
+
+
+/* //TODO: TITULO 2 ¿QUE NECESITA SU AUTO? */
+.titulo2{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 5px;
+    color: aliceblue;
+    background-color: rgba(6, 32, 82);
+}
+
+
+/* //TODO: TITULO3  ¿UN POCO PERDIDO/A?*/
+.titulo3{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+    color: rgba(6, 32, 82);
+}
+
+
+/* //TODO: VIDEO TUTORIAL */
+.contenedor_tuto {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.vid {
+    border: 1px;
+    box-shadow: 0 0 10px 2px #0006;
+    width: 1000px;
+}
+
+.vid video {
+    width: 100%;
+    height: 100%;
+}
+
+/* //TODO: INTENTO DE IMG PARA EL CARRUSEL */
+/* op es cuadrado completo */
+.op {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    margin: 5px;
+    overflow: hidden;
+}
+.op:hover {
+    transform: scale(1.1);
+    transition: transform .5s;
+}
+/* opcion 1 */
+#op1 {
+    background-color: rgb(255, 227, 79);
+}
+.nombre1 {
+    margin-top: 7px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center; 
+}
+.nombre1 h1 {
+    font-size: 19px;
+    color: black;
+}
+.ser {
+    display: flex;
+    justify-content: right;
+    margin-right: 5px;
+}
+#a1 {
+    margin-top: 5px;
+    width: 90px;
+    height: 100px;
+}
+
+/* opcion 2 */
+#op2 {
+    background-color: rgb(204, 229, 255);
+}
+.nombre2 {
+    margin-top: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    
+}
+.nombre2 h1 {
+    font-size: 19px;
+    color: black;
+}
+.rep {
+    display: flex;
+    justify-content: right;
+    margin-right: 5px;
+}
+#a2 {
+    margin-top: 5px;
+    width: 100px;
+    height: 100px;
+}
+
+/* opcion 3 */
+#op3 {
+    background-color: rgb(1, 43, 153);
+}
+.nombre3 {
+    margin-top: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    
+}
+.nombre3 h1 {
+    font-size: 19px;
+    color: white;
+}
+.lim {
+    display: flex;
+    justify-content: right;
+    margin-right: 5px;
+}
+#a3 {
+    margin-top: 5px;
+    width: 100px;
+    height: 100px;
+}
+
+/* opcion4 */
+#op4 {
+    background-color: rgb(211, 254, 121);
+}
+.nombre4 {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.nombre4 h1 {
+    font-size: 19px;
+    color: black;
+}
+.ins {
+    display: flex;
+    justify-content: right;
+    margin-right: 5px;
+}
+#a4 {
+    width: 90px;
+    height: 85px;
+}
+/* opcion 5 */
+#op5 {
+    background-color: rgb(213, 29, 8);
+    width: 200px;
+}
+.nombre5 {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.nombre5 h1 {
+    font-size: 19px;
+    color: white;
+}
+.asi {
+    display: flex;
+    justify-content: right;
+    margin-right: 5px;
+}
+#a5 {
+    width: 115px;
+    height: 100px;
+    
+}
+
+/* opcion 6 */
+#op6 {
+    background-color: rgb(233, 233, 237);
+}
+.nombre6 {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.nombre6 h1 {
+    font-size: 19px;
+    color: black;
+}
+.des {
+    display: flex;
+    justify-content: right;
+    margin-right: 5px;
+}
+#a6 {
+    width: 90px;
+    height: 85px;
+}
+/* opcion 7 */
+#op7 {
+    background-color: rgb(153, 84, 204);
+}
+.nombre7 {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.nombre7 h1 {
+    font-size: 19px;
+    color: white;
+}
+.elec {
+    display: flex;
+    justify-content: right;
+    margin-right: 5px;
+}
+#a7 {
+    width: 90px;
+    height: 85px;
+}
+/* opcion 8 */
+#op8 {
+    background-color: rgb(132, 151, 176);
+}
+.nombre8 {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.nombre8 h1 {
+    font-size: 19px;
+    color: white;
+}
+.mot {
+    display: flex;
+    justify-content: right;
+    margin-right: 5px;
+}
+#a8 {
+    width: 90px;
+    height: 85px;
+}
+
+
+/* //TODO: CARRUSEL */
+.container {
+    display: flex;
+    margin-bottom: 80px; 
+}
+.container .slider {
+    display: flex;
+    padding: 2px;
+    width: 1300px;
+    height: 165px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.container .slider img {
+    margin: 5px;
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+
+}
+.container .control {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    object-fit: cover;
+    padding: 10px;
+}
+.iz {
+    display: flex;
+    align-self: center;
+    margin-right: 25px;
+}
+.de {
+    display: flex;
+    align-self: center;
+    margin-left: 25px;
+}
+
+/* //TODO: ANIMACIÓN */
+.carro:hover{
+    transform: scale(1.1);
+    transition: transform .5s;
+}
+
+/*//TODO: MAPA MECANICOS */
+
+.talleres_valdivia{
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+.mapa_valdivia{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 110px;
+}
+
+/* //TODO: TALLERES DESTACADOS */
+.destacado_principal {
+    display: flex;
+    padding-left: 300px;
+    
+}
+/* //TODO: TALLER DESTACADO PRINCIPAL */
+.card1 {
+    border: 1px;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, .2);
+    width: 100%;
+}
+.taller1 {
+    display: flex;
+    max-width: 600px;
+    margin-right: 35px
+}
+/* EL CARD_BODY, EL RELLENO Y EL NOMBRE_TALLER LE SIRVE A TODOS LOS DESTACADOS */
+.card_body {
+    color: black;
+    
+}
+.relleno {
+    display: flex;
+    align-items: center;
+}
+.titulo_destacado {
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+.valor_num {
+    align-self: center;
+    margin-right: 10px;
+}
+.nombre_taller{
+    font-size: 19px;
+    margin-right: 71px;
+    padding-left: 15px;
+    justify-content: start;
+    color: gray;
+}
+
+.valor1 {
+    display: flex;
+    padding-top: 10px;
+    padding-left: 220px;
+    font-size: 20px;
+}
+
+
+/* //TODO: TITULO DE TALLERES DESTACADOS */
+.contenedor_titulo{
+    align-self: center;
+    color: rgb(6, 32, 82);
+}
+.estrella{
+    color:gold;
+}
+
+
+/*  //TODO: RESTO DE TALLERES DESTACADOS */
+.destacados {
+    display: flex;
+}
+.card2 {
+    border: 1px;
+    box-shadow: 5px 2px 8px rgba(0, 0, 0, .2);
+    border-radius: 15px;
+    width: 450px;
+    max-height: 250px;
+}
+
+.taller2 {
+    display: flex;
+    padding-left: 300px;
+    padding-top: 20px;
+}
+
+.valor2 {
+    display: flex;
+    padding-top: 10px;
+    padding-left: 220px;
+    font-size: 20px;
+}
+
+.titulo_destacado2 {
+    padding-left: 15px;
+}
+
+.nombre_taller2 {
+    font-size: 19px;
+    padding-left: 15px;
+    justify-content: start;
+    color: gray;
+}
+
+.relleno2 {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    max-height: 25px;
+    height: 100%;
+}
+
+.taller3 {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.valor3 {
+    display: flex;
+    padding-top: 10px;
+    padding-left: 150px;
+    font-size: 20px;
+}
+
+
+
+/* //TODO: BENEFICIOS DE USO */
+/* TITULO  */
+.titulo_beneficios {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 300px;
+    
+}
+
+.img_linea {
+    display: flex;
+}
+
+.tit_beneficios {
+    display: flex;
+    color: rgba(6, 32, 82);
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+/*//TODO: FOOTER */ 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_red{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+.footer{
+    background-color:darkblue;
+    padding: 50px 0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 60px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbb;
+    display: block;
+    transform: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #fff;
+    padding-left: 8px;
+}
+
+.mensaje{
+    color: #fff;
+}
